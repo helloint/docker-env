@@ -1,0 +1,11 @@
+docker run --name nginx \
+  -v "$(pwd)"/html:/usr/share/nginx/html \
+  -v "$(pwd)"/conf/nginx.conf:/etc/nginx/nginx.conf:ro \
+  -v "$(pwd)"/conf/nginx.html.conf:/etc/nginx/nginx.html.conf:ro \
+  -v "$(pwd)"/conf/nginx.nba.conf:/etc/nginx/nginx.nba.conf:ro \
+  -v /CA:/etc/nginx/CA:ro \
+  -p 80:80 \
+  -p 443:443 \
+  -p 8081:8080 \
+  -p 8444:8444 \
+  -d nginx

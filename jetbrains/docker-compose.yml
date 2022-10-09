@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  jrebel:
+    image: qierkang/golang-reverseproxy
+    container_name: jetbrains-jrebel
+    ports:
+      - "8888:8888"
+    privileged: true
+    restart: always
