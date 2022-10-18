@@ -1,6 +1,22 @@
 # Docker Commands
-## Docker build CLI 命令行说明
+## Docker CLI build 命令行说明
 Reference: <https://docs.docker.com/engine/reference/commandline/build/>
+
+## Docker CLI run 命令行说明
+Reference: <https://docs.docker.com/engine/reference/commandline/run/>
+
+* `--name`  
+  Assign a name to the container
+* `-i` (`--interactive`)  
+  Keep STDIN open even if not attached
+* `-t`  
+  Allocate a pseudo-TTY
+* `-d` (`--detach`)  
+  Run container in background and print container ID
+* `-p` (`--expose`)  
+  Expose a port or a range of ports
+* `-e` (`--env`)  
+  Set environment variables
 
 ## Dockerfile reference
 Reference: <https://docs.docker.com/engine/reference/builder/>
