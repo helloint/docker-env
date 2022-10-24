@@ -157,6 +157,11 @@
         <Valve className="org.apache.catalina.authenticator.SingleSignOn" />
         -->
 
+        <Context path="nbaalt" docBase="/usr/local/tomcat/apps/nbaalt" privileged="true" reloadable="false">
+          <!--macOS to support soft link-->
+          <Resources allowLinking="true"/>
+        </Context>
+
         <!-- Access log processes all example.
              Documentation at: /docs/config/valve.html
              Note: The pattern used is equivalent to using pattern="common" -->

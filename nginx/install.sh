@@ -3,6 +3,7 @@ docker run --name nginx \
   -v "$(pwd)"/conf/nginx.conf:/etc/nginx/nginx.conf:ro \
   -v "$(pwd)"/conf/nginx.html.conf:/etc/nginx/nginx.html.conf:ro \
   -v "$(pwd)"/conf/nginx.nba.conf:/etc/nginx/nginx.nba.conf:ro \
+  -v /Users/helloint/workspace/nbaalt/build:/usr/share/nginx/apps/nbaalt:ro \
   -v /CA:/etc/nginx/CA:ro \
   -p 80:80 \
   -p 443:443 \
