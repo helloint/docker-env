@@ -7,6 +7,5 @@ docker run --name nginx \
   -v /CA:/etc/nginx/CA:ro \
   -p 80:80 \
   -p 443:443 \
-  -p 8081:8080 \
   -p 8444:8444 \
   -d nginx
